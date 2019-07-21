@@ -1,0 +1,13 @@
+body {
+    background-size: 100%;
+}
+
+#phone-wrapper {
+    width: 90%;
+    height: 300px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
