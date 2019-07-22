@@ -1,7 +1,9 @@
-.phone-wrapper{
+.phone-wrapper {
     font-size: 30px;
+}
+
+.div-wrapper {
     display: flex;
-    justify-content: center;
 }
 
 .block {
@@ -43,6 +45,11 @@
     outline: none;
 }
 
-.error {
+.error input{
     border: 2px solid #ff1100;
+}
+
+.error-message {
+    font-size: 30px;
+    color: #ff1100;
 }

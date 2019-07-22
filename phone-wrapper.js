@@ -6,8 +6,10 @@ class PhoneWrapper {
     }
 
     maskParse() {
-        let chars = this.mask.split("");
-
+        const chars = this.mask.split("");
+        const div = document.createElement("div");
+        div.classList.add("div-wrapper");
+        wrapper.appendChild(div);
         for (let i = 0; i < chars.length; i++) {
             switch (chars[i]) {
                 case "I":
@@ -60,7 +62,7 @@ class PhoneWrapper {
         }
 
         for (let i = 0; i < this.nodes.length; i++) {
-            this.wrapper.appendChild(this.nodes[i]);
+            this.wrapper.querySelector("div").appendChild(this.nodes[i]);
         }
     }
 }
