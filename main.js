@@ -5,9 +5,10 @@ const Props = {
     mask: mask,
     wrapper: wrapper
 };
+
 const phoneWrapper = new PhoneWrapper(Props);
 phoneWrapper.maskParse();
-// alert(phoneWrapper.nodes);
+
 const inputs = wrapper.querySelectorAll(".input-block");
 for (let i=0; i<inputs.length; i++) {
     inputs[i].onblur = function () {
