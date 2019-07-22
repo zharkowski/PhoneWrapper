@@ -14,16 +14,12 @@ for (let i=0; i<inputs.length; i++) {
     inputs[i].onblur = function () {
         if (isNaN(this.value)) {
             wrapper.classList.add("error");
-            const errorMessage = document.createElement("div");
-            errorMessage.innerHTML = "Неверный номер, попробуйте еще раз";
-            errorMessage.classList.add("error-message");
-            wrapper.appendChild(errorMessage);
+            wrapper.querySelector(".error-message").style.display = "block";
         }
     };
 
     inputs[i].onfocus = function () {
         wrapper.classList.remove("error");
-        const errorMessage = wrapper.querySelector(".error-message");
-        wrapper.removeChild(errorMessage);
+        wrapper.querySelector(".error-message").style.display = "none";
     };
 }

@@ -64,5 +64,11 @@ class PhoneWrapper {
         for (let i = 0; i < this.nodes.length; i++) {
             this.wrapper.querySelector("div").appendChild(this.nodes[i]);
         }
+
+        const errorMessage = document.createElement("div");
+        errorMessage.innerHTML = "Неверный номер, попробуйте еще раз";
+        errorMessage.classList.add("error-message");
+        errorMessage.style.display = "none";
+        wrapper.appendChild(errorMessage);
     }
 }
