@@ -4,20 +4,10 @@
     <meta charset="UTF-8">
     <title>PhoneWrapper</title>
     <link rel="stylesheet" href="style.css">
-    <script src="phone-wrapper.js"></script>
+    <script defer src="phone-wrapper.js"></script>
+    <script defer src="main.js"></script>
 </head>
 <body>
-    <div id="phone-wrapper"></div>
-    <script>
-        const MASK = '+7(985)0II-**-**';
-        const WRAPPER = document.getElementById("phone-wrapper");
-
-        let Props = {
-            mask: MASK,
-            wrapper: WRAPPER
-        };
-        let phoneWrapper = new PhoneWrapper(Props);
-        maskParse(MASK);
-    </script>
+    <div class="phone-wrapper"></div>
 </body>
 </html>
