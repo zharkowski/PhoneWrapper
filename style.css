@@ -1,18 +1,20 @@
 .phone-wrapper{
     font-size: 30px;
-    /*border: 2px solid red;*/
     display: flex;
     justify-content: center;
 }
 
-.grey-block {
-    /*border: 2px solid green;*/
-    width : 50px;
+.block {
     height: 65px;
     border-radius: 5px;
+    width : 50px;
     margin: auto 5px;
-    background-color: #f0f0f0;
     text-align: center;
+
+}
+
+.grey-block {
+    background-color: #f0f0f0;
     display: table;
 }
 
@@ -23,18 +25,24 @@
 
 .symbol-block {
     height: 65px;
-    /*border: 2px solid green;*/
-    text-align: center;
     display: table;
 }
 
 .input-block {
     font-size: 30px;
-    height: 65px;
-    width : 50px;
     border: 2px solid #e0e0e0;
     background-color: transparent;
-    border-radius: 5px;
-    margin: auto 5px;
-    text-align: center;
+}
+
+.input-block:hover {
+    border-color: #c2c2c2;
+}
+
+.input-block:focus {
+    border: 2px solid #858585;
+    outline: none;
+}
+
+.error {
+    border: 2px solid #ff1100;
 }
